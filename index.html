@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Requests Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Customer Requests Portal</h1>
+            <nav class="navigation">
+                <a href="view_complaints.php" class="btn">Show Complaints</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <div class="form-container">
+            <h2>Submit Your Request</h2>
+            <form action="submit_request.php" method="POST" class="request-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" placeholder="Your Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <label for="date_visited">Date Visited</label>
+                    <input type="date" id="date_visited" name="date_visited" required>
+                </div>
+                <div class="form-group">
+                    <label for="reason">Complaint or Reason</label>
+                    <textarea id="reason" name="reason" rows="5" placeholder="Describe your complaint or reason for a discount" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="discount">Specify Discount</label>
+                    <input type="text" id="discount" name="discount" placeholder="e.g., '15% off next visit'">
+                </div>
+                <button type="submit" class="btn submit-btn">Submit Request</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Customer Requests Portal. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
